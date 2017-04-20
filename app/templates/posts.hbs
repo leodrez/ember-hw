@@ -1,8 +1,11 @@
 <h2>Posts</h2>
 <ul>
   {{#each model as |file|}}
-    <li>
-      {{file.data.title}}
-    </li>
+    <p>
+      {{#link-to 'post' post.id}}
+          {{file.data.title}}
+      {{/link-to}}
+    </p>
   {{/each}}
 </ul>
+{{outlet}}
