@@ -2,7 +2,7 @@
 <ul>
   {{#each model as |file|}}
     <li>
-      {{file}}
+      <a href="{{file.data.url}}" target="_blank">{{file.data.title}}</a>
     </li>
   {{/each}}
 </ul>
