@@ -1,8 +1,9 @@
 import Ember from 'ember';
 
+console.log('hello');
 export default Ember.Route.extend({
-  model(params) {
-    return this.get('post', params.post_id);
+  model() {
+    return model
   }
 });
 
